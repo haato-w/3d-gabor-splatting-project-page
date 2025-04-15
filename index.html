@@ -53,16 +53,16 @@
 
   <script defer="defer">
     window.addEventListener('load', function(){
-      // new Glider(document.querySelector('.glider'), {
-      //   slidesToShow: 1,
-      //   dots: '#dots',
-      //   arrows: {
-      //     prev: '.glider-prev',
-      //     next: '.glider-next'
-      //   },
-      //   // draggable: true,
-      //   scrollLock: true
-      // });
+      new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1,
+        dots: '#dots',
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        },
+        // draggable: true,
+        scrollLock: true
+      });
       
       // Juxtaposeを個別に初期化
       new juxtapose.JXSlider('#juxta1', 
@@ -340,71 +340,75 @@
   <div class="corner bottom-left">左下</div>
   <div class="corner bottom-right">右下</div> -->
 
-  <div class="comparison-contain">
+  <!-- <div class="comparison-contain">
   <div class="item corner top-left">
-    <!-- Comparison slide item -->
+    Comparison slide item
     <div id="juxta1"></div>
     <h2 class="subtitle has-text-centered">
       Our method can express high-frequency texture surface especially on center area.
     </h2>
   </div>
   <div class="item corner top-right">
-    <!-- Comparison slide item -->
+    Comparison slide item
     <div id="juxta2"></div>
     <h2 class="subtitle has-text-centered">
       Our method can express high-frequency texture surface especially on center area.
     </h2>
   </div>
   <div class="item corner bottom-left">
-    <!-- Comparison slide item -->
+    Comparison slide item
     <div id="juxta3"></div>
     <h2 class="subtitle has-text-centered">
       Our method can express high-frequency texture surface especially on center area.
     </h2>
   </div>
   <div class="item corner bottom-right">
-    <!-- Comparison slide item -->
+    Comparison slide item
     <div id="juxta4"></div>
     <h2 class="subtitle has-text-centered">
       Our method can express high-frequency texture surface especially on center area.
     </h2>
-  </div>
+  </div> -->
 
 
-  <!-- <div class="glider-contain">
-    <div class="glider">
-      <div class="item">
-        Comparison slide item
-        <div id="juxta1"></div>
-        <h2 class="subtitle has-text-centered">
-          Our method can express high-frequency texture surface especially on center area.
-        </h2>
-      </div>
-      <div class="item">
-        Comparison slide item
-        <div id="juxta2"></div>
-        <h2 class="subtitle has-text-centered">
-          Our method can express high-frequency texture surface especially on center area.
-        </h2>
-      </div>
-      <div class="item">
-        Comparison slide item
-        <div id="juxta3"></div>
-        <h2 class="subtitle has-text-centered">
-          Our method can express high-frequency texture surface especially on center area.
-        </h2>
-      </div>
-      <div class="item">
-        Comparison slide item
-        <div id="juxta4"></div>
-        <h2 class="subtitle has-text-centered">
-          Our method can express high-frequency texture surface especially on center area.
-        </h2>
+  <div class="comparing-contain">
+    <div class="glider-contain">
+      <div class="glider">
+        <div class="item">
+          Comparison slide item
+          <div id="juxta1"></div>
+          <h2 class="subtitle has-text-centered">
+            Our method can express high-frequency texture surface especially on center area.
+          </h2>
+        </div>
+        <div class="item">
+          Comparison slide item
+          <div id="juxta2"></div>
+          <h2 class="subtitle has-text-centered">
+            Our method can express high-frequency texture surface especially on center area.
+          </h2>
+        </div>
+        <div class="item">
+          Comparison slide item
+          <div id="juxta3"></div>
+          <h2 class="subtitle has-text-centered">
+            Our method can express high-frequency texture surface especially on center area.
+          </h2>
+        </div>
+        <div class="item">
+          Comparison slide item
+          <div id="juxta4"></div>
+          <h2 class="subtitle has-text-centered">
+            Our method can express high-frequency texture surface especially on center area.
+          </h2>
+        </div>
       </div>
     </div>
-    <button class="glider-prev">«</button>
-    <button class="glider-next">»</button>
-  </div> -->
+    <div class="glider-controllar">
+      <button class="glider-next">»</button>
+      <button class="glider-prev">«</button>
+    </div>
+  </div>
 
 
   <!-- Image carousel -->
