@@ -65,7 +65,7 @@
       });
       
       // Juxtaposeを個別に初期化
-      JuxtaposeJS.embed('#juxta1', {
+      new juxtapose.embed('#juxta1', {
         startingPosition: "50%",
         showLabels: true,
         animate: true,
@@ -86,7 +86,7 @@
         ]
       });
       
-      JuxtaposeJS.embed('#juxta2', {
+      new juxtapose.embed('#juxta2', {
         startingPosition: "50%",
         showLabels: true,
         animate: true,
@@ -102,6 +102,27 @@
           },
           {
             src: "static/images/3dgabor_boots_00007.png",
+            alt: "ours"
+          }
+        ]
+      });
+
+      JuxtaposeJS.embed('#juxta3', {
+        startingPosition: "50%",
+        showLabels: true,
+        animate: true,
+        label: "2DGS",
+        label2: "Ours",
+        mode: "horizontal",
+        showCredits: false,
+        makeResponsive: true,
+        images: [
+          {
+            src: "static/images/2dgs_shirt_00016.png",
+            alt: "2dgs"
+          },
+          {
+            src: "static/images/3dgabor_shirt_00016.png",
             alt: "ours"
           }
         ]
@@ -291,6 +312,13 @@
           <img src="static/images/2dgs_boots_00007.png" alt="2dgs" />
           <img src="static/images/3dgabor_boots_00007.png" alt="ours" />
         </div> -->
+        <h2 class="subtitle has-text-centered">
+          Our method can express high-frequency texture surface especially on center area.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Comparison slide item -->
+        <div id="juxta3"></div>
         <h2 class="subtitle has-text-centered">
           Our method can express high-frequency texture surface especially on center area.
         </h2>
