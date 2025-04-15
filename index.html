@@ -133,6 +133,29 @@
           makeResponsive: true,
         }
       );
+
+      new juxtapose.JXSlider('#juxta4', 
+        [
+          {
+            src: "static/images/2dgs_sweat_00002.png",
+            alt: "2dgs"
+          },
+          {
+            src: "static/images/3dgabor_sweat_00002.png",
+            alt: "ours"
+          }
+        ], 
+        {
+          startingPosition: "50%",
+          showLabels: true,
+          animate: true,
+          label: "2DGS",
+          label2: "Ours",
+          mode: "horizontal",
+          showCredits: false,
+          makeResponsive: true,
+        }
+      );
     });
   </script>
 </head>
@@ -282,31 +305,12 @@
   </section>
   <!-- End paper abstract -->
 
-  <!-- Image carousel -->
-  <!-- <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Visual Comparisons</h2>
-        <div class="item" style="width: 600px;">
-          <div class="juxtapose" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
-            <img src="static/images/2dgs_vest_00040.png" alt="2dgs" />
-            <img src="static/images/3dgabor_vest_00040.png" alt="ours" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <div class="glider-contain">
-    <button class="glider-prev">«</button>
     <div class="glider">
       <div class="item">
         <!-- Comparison slide item -->
         <div id="juxta1"></div>
-        <!-- <div id="juxta1" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
-          <img src="static/images/2dgs_vest_00040.png" alt="2dgs" />
-          <img src="static/images/3dgabor_vest_00040.png" alt="ours" />
-        </div> -->
         <h2 class="subtitle has-text-centered">
           Our method can express high-frequency texture surface especially on center area.
         </h2>
@@ -314,10 +318,6 @@
       <div class="item">
         <!-- Comparison slide item -->
         <div id="juxta2"></div>
-        <!-- <div id="juxta2" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
-          <img src="static/images/2dgs_boots_00007.png" alt="2dgs" />
-          <img src="static/images/3dgabor_boots_00007.png" alt="ours" />
-        </div> -->
         <h2 class="subtitle has-text-centered">
           Our method can express high-frequency texture surface especially on center area.
         </h2>
@@ -329,7 +329,15 @@
           Our method can express high-frequency texture surface especially on center area.
         </h2>
       </div>
+      <div class="item">
+        <!-- Comparison slide item -->
+        <div id="juxta4"></div>
+        <h2 class="subtitle has-text-centered">
+          Our method can express high-frequency texture surface especially on center area.
+        </h2>
+      </div>
     </div>
+    <button class="glider-prev">«</button>
     <button class="glider-next">»</button>
   </div>
 
