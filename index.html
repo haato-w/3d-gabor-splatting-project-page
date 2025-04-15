@@ -64,6 +64,49 @@
         draggable: true,
         scrollLock: true
       });
+      
+      // Juxtaposeを個別に初期化
+      JuxtaposeJS.embed('#juxta1', {
+        startingPosition: "50%",
+        showLabels: true,
+        animate: true,
+        label: "2DGS",
+        label2: "Ours",
+        mode: "horizontal",
+        showCredits: false,
+        makeResponsive: true,
+        images: [
+          {
+            src: "static/images/2dgs_vest_00040.png",
+            alt: "2dgs"
+          },
+          {
+            src: "static/images/3dgabor_vest_00040.png",
+            alt: "ours"
+          }
+        ]
+      });
+      
+      JuxtaposeJS.embed('#juxta2', {
+        startingPosition: "50%",
+        showLabels: true,
+        animate: true,
+        label: "2DGS",
+        label2: "Ours",
+        mode: "horizontal",
+        showCredits: false,
+        makeResponsive: true,
+        images: [
+          {
+            src: "static/images/2dgs_boots_00007.png",
+            alt: "2dgs"
+          },
+          {
+            src: "static/images/3dgabor_boots_00007.png",
+            alt: "ours"
+          }
+        ]
+      });
     });
   </script>
 </head>
@@ -233,7 +276,7 @@
     <div class="glider">
       <div class="item">
         <!-- Comparison slide item -->
-        <div class="juxtapose" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
+        <div class="juxta1" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
           <img src="static/images/2dgs_vest_00040.png" alt="2dgs" />
           <img src="static/images/3dgabor_vest_00040.png" alt="ours" />
         </div>
@@ -243,7 +286,7 @@
       </div>
       <div class="item">
         <!-- Comparison slide item -->
-        <div class="juxtapose" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
+        <div class="juxta2" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
           <img src="static/images/2dgs_boots_00007.png" alt="2dgs" />
           <img src="static/images/3dgabor_boots_00007.png" alt="ours" />
         </div>
