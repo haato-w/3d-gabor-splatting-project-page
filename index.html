@@ -53,17 +53,17 @@
 
   <script defer="defer">
     window.addEventListener('load', function(){
-      new Glider(document.querySelector('.glider'));
-      // new Glider(document.querySelector('.glider'), {
-      //   slidesToShow: 1,
-      //   dots: '#dots',
-      //   arrows: {
-      //     prev: '.glider-prev',
-      //     next: '.glider-next'
-      //   },
-      //   draggable: true,
-      //   scrollLock: true
-      // });
+      // new Glider(document.querySelector('.glider'));
+      new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1,
+        dots: '#dots',
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        },
+        draggable: true,
+        scrollLock: true
+      });
     });
   </script>
 </head>
@@ -228,33 +228,31 @@
     </div>
   </section> -->
 
-
-  <div class="glider">
-    <div class="item">
-      <!-- Comparison slide item -->
-      <div class="juxtapose" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
-        <img src="static/images/2dgs_vest_00040.png" alt="2dgs" />
-        <img src="static/images/3dgabor_vest_00040.png" alt="ours" />
+  <div class="glider-contain">
+    <button class="glider-prev">«</button>
+    <div class="glider">
+      <div class="item">
+        <!-- Comparison slide item -->
+        <div class="juxtapose" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
+          <img src="static/images/2dgs_vest_00040.png" alt="2dgs" />
+          <img src="static/images/3dgabor_vest_00040.png" alt="ours" />
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Our method can express high-frequency texture surface especially on center area.
+        </h2>
       </div>
-      <h2 class="subtitle has-text-centered">
-        Our method can express high-frequency texture surface especially on center area.
-      </h2>
-    </div>
-    <div class="item">
-      <!-- Comparison slide item -->
-      <div class="juxtapose" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
-        <img src="static/images/2dgs_boots_00007.png" alt="2dgs" />
-        <img src="static/images/3dgabor_boots_00007.png" alt="ours" />
+      <div class="item">
+        <!-- Comparison slide item -->
+        <div class="juxtapose" data-startingposition="50%" data-showlabels="true" data-label="2DGS" data-label2="Ours">
+          <img src="static/images/2dgs_boots_00007.png" alt="2dgs" />
+          <img src="static/images/3dgabor_boots_00007.png" alt="ours" />
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Our method can express high-frequency texture surface especially on center area.
+        </h2>
       </div>
-      <h2 class="subtitle has-text-centered">
-        Our method can express high-frequency texture surface especially on center area.
-      </h2>
     </div>
-    <!-- <div> 2 </div>
-    <div> 3 </div>
-    <div> 4 </div>
-    <div> 5 </div>
-    <div> 6 </div> -->
+    <button class="glider-next">»</button>
   </div>
 
 
