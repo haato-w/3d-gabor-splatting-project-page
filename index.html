@@ -65,16 +65,8 @@
       });
       
       // Juxtaposeを個別に初期化
-      new juxtapose.JXSlider('#juxta1', {
-        startingPosition: "50%",
-        showLabels: true,
-        animate: true,
-        label: "2DGS",
-        label2: "Ours",
-        mode: "horizontal",
-        showCredits: false,
-        makeResponsive: true,
-        images: [
+      new juxtapose.JXSlider('#juxta1', 
+        [
           {
             src: "static/images/2dgs_vest_00040.png",
             alt: "2dgs"
@@ -83,19 +75,21 @@
             src: "static/images/3dgabor_vest_00040.png",
             alt: "ours"
           }
-        ]
-      });
+        ], 
+        {
+          startingPosition: "50%",
+          showLabels: true,
+          animate: true,
+          label: "2DGS",
+          label2: "Ours",
+          mode: "horizontal",
+          showCredits: false,
+          makeResponsive: true,
+        }
+      );
       
-      new juxtapose.JXSlider('#juxta2', {
-        startingPosition: "50%",
-        showLabels: true,
-        animate: true,
-        label: "2DGS",
-        label2: "Ours",
-        mode: "horizontal",
-        showCredits: false,
-        makeResponsive: true,
-        images: [
+      new juxtapose.JXSlider('#juxta2', 
+        [
           {
             src: "static/images/2dgs_boots_00007.png",
             alt: "2dgs"
@@ -104,19 +98,21 @@
             src: "static/images/3dgabor_boots_00007.png",
             alt: "ours"
           }
-        ]
-      });
+        ], 
+        {
+          startingPosition: "50%",
+          showLabels: true,
+          animate: true,
+          label: "2DGS",
+          label2: "Ours",
+          mode: "horizontal",
+          showCredits: false,
+          makeResponsive: true,
+        }
+      );
 
-      new juxtapose.JXSlider('#juxta3', {
-        startingPosition: "50%",
-        showLabels: true,
-        animate: true,
-        label: "2DGS",
-        label2: "Ours",
-        mode: "horizontal",
-        showCredits: false,
-        makeResponsive: true,
-        images: [
+      new juxtapose.JXSlider('#juxta3', 
+        [
           {
             src: "static/images/2dgs_shirt_00016.png",
             alt: "2dgs"
@@ -125,8 +121,18 @@
             src: "static/images/3dgabor_shirt_00016.png",
             alt: "ours"
           }
-        ]
-      });
+        ], 
+        {
+          startingPosition: "50%",
+          showLabels: true,
+          animate: true,
+          label: "2DGS",
+          label2: "Ours",
+          mode: "horizontal",
+          showCredits: false,
+          makeResponsive: true,
+        }
+      );
     });
   </script>
 </head>
