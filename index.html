@@ -69,19 +69,19 @@
         [
           {
             src: "static/images/2dgs_vest_00040.png",
-            alt: "2dgs"
+            alt: "2dgs", 
+            label: "2DGS [HUANG 2024]"
           },
           {
             src: "static/images/3dgabor_vest_00040.png",
-            alt: "ours"
+            alt: "ours", 
+            label: "Ours"
           }
         ], 
         {
           startingPosition: "50%",
           showLabels: true,
           animate: true,
-          label: "2DGS",
-          label2: "Ours",
           mode: "horizontal",
           showCredits: false,
           makeResponsive: true,
@@ -92,19 +92,19 @@
         [
           {
             src: "static/images/2dgs_boots_00007.png",
-            alt: "2dgs"
+            alt: "2dgs", 
+            label: "2DGS [HUANG 2024]"
           },
           {
             src: "static/images/3dgabor_boots_00007.png",
-            alt: "ours"
+            alt: "ours", 
+            label: "Ours"
           }
         ], 
         {
           startingPosition: "50%",
           showLabels: true,
           animate: true,
-          label: "2DGS",
-          label2: "Ours",
           mode: "horizontal",
           showCredits: false,
           makeResponsive: true,
@@ -115,19 +115,19 @@
         [
           {
             src: "static/images/2dgs_shirt_00016.png",
-            alt: "2dgs"
+            alt: "2dgs", 
+            label: "2DGS [HUANG 2024]"
           },
           {
             src: "static/images/3dgabor_shirt_00016.png",
-            alt: "ours"
+            alt: "ours", 
+            label: "Ours"
           }
         ], 
         {
           startingPosition: "50%",
           showLabels: true,
           animate: true,
-          label: "2DGS",
-          label2: "Ours",
           mode: "horizontal",
           showCredits: false,
           makeResponsive: true,
@@ -137,20 +137,20 @@
       new juxtapose.JXSlider('#juxta4', 
         [
           {
-            src: "static/images/2dgs_sweat_00002.png",
-            alt: "2dgs"
+            src: "static/images/gt_sweat_00002.png",
+            alt: "ground truth", 
+            label: "Ground Truth"
           },
           {
             src: "static/images/3dgabor_sweat_00002.png",
-            alt: "ours"
+            alt: "ours", 
+            label: "Ours"
           }
         ], 
         {
           startingPosition: "50%",
           showLabels: true,
           animate: true,
-          label: "2DGS",
-          label2: "Ours",
           mode: "horizontal",
           showCredits: false,
           makeResponsive: true,
@@ -355,36 +355,27 @@
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3 has-text-centered">Visual Comparison</h2>
+        <span>
+          Our method can express high-frequency texture surface accurately than 2DGS.
+        </span>
         <div class="glider-contain">
           <button class="glider-prev">«</button>
           <div class="glider">
             <div class="item">
               <!-- Comparison slide item -->
               <div id="juxta1"></div>
-              <h2 class="subtitle has-text-centered">
-                Our method can express high-frequency texture surface especially on center area.
-              </h2>
             </div>
             <div class="item">
               <!-- Comparison slide item -->
               <div id="juxta2"></div>
-              <h2 class="subtitle has-text-centered">
-                Our method can express high-frequency texture surface especially on center area.
-              </h2>
             </div>
             <div class="item">
               <!-- Comparison slide item -->
               <div id="juxta3"></div>
-              <h2 class="subtitle has-text-centered">
-                Our method can express high-frequency texture surface especially on center area.
-              </h2>
             </div>
             <div class="item">
               <!-- Comparison slide item -->
               <div id="juxta4"></div>
-              <h2 class="subtitle has-text-centered">
-                Our method can express high-frequency texture surface especially on center area.
-              </h2>
             </div>
           </div>
           <button class="glider-next">»</button>
@@ -396,7 +387,7 @@
 
 
   <!--BibTex citation -->
-  <section class="section is-light" id="BibTeX">
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
