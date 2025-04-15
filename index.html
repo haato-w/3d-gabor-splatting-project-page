@@ -128,13 +128,14 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
           <!-- Your video here -->
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
-        </video>
+          <!-- <source src="static/videos/banner_video.mp4" type="video/mp4"> -->
+        <!-- </video> -->
+        <iframe src="https://www.youtube.com/watch?v=ZpBMXtxEEWc" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
         <h2 class="subtitle has-text-centered">
-          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
-          pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+          We propose 3D Gabor Splatting, a novel representation that enables reconstruction of high-frequency surface textures on 3D objects by augmenting Gaussian primitives with Gabor wave functions.
         </h2>
       </div>
     </div>
@@ -149,11 +150,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus.
-              Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a
-              vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac
-              gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed
-              vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+              3D Gaussian splatting has experienced explosive popularity in the past few years in the field of novel view synthesis. The lightweight and differentiable representation of the radiance field using the Gaussian enables rapid and high-quality recon- struction and fast rendering. However, reconstructing objects with high-frequency surface textures (e.g., fine stripes) requires many skinny Gaussian kernels because each Gaussian represents only one color if viewed from one direction. Thus, reconstruct- ing the stripes pattern, for example, requires Gaussians for at least the number of stripes. We present 3D Gabor splatting, which augments the Gaussian kernel to represent spatially high-frequency signals using Gabor noise. The Gabor kernel is a combi- nation of a Gaussian term and spatially fluctuating wave functions, making it suitable for representing spatial high-frequency texture. We demonstrate that our 3D Gabor splatting can reconstruct various high-frequency textures on the objects.
             </p>
           </div>
         </div>
